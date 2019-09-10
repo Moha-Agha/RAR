@@ -149,15 +149,12 @@ body {
   bottom: 10px;
   right: 10px;
 }
-.mainSleider {
-  height: 350px;
-  border-radius: 15px;
-}
+
 .slider {
-  width: 100vw;
-  height: 100vh;
-  background: blue;
   position: relative;
+  width: 50%;
+  margin: 0 auto;
+  height: 300px;
   overflow: hidden;
   white-space: nowrap;
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { gitSearchResultAPI } from '../API/YouTubeGetData';
-import Slider from '../slider/Slider';
+import Slider from '../slider2/Slider';
 import TextBlock from './textBlock';
 
 export class GitSearchResult extends Component {
