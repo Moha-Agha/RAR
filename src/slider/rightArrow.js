@@ -1,9 +1,12 @@
 import React from 'react';
+// icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 const RightArrow = props => {
   return (
     <div className='nextArrow arrow' onClick={props.goToNextSlide}>
-      <i className='fa fa-arrow-right fa-2x' aria-hidden='true'></i>
+      <FontAwesomeIcon className='arrowRight' icon={faChevronRight} />
     </div>
   );
 };

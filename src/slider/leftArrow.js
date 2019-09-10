@@ -1,9 +1,12 @@
 import React from 'react';
+// icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 const LeftArrow = props => {
   return (
     <div className='backArrow arrow' onClick={props.goToPrevSlide}>
-      <i className='fa fa-arrow-left fa-2x' aria-hidden='true'></i>
+      <FontAwesomeIcon className='arrowLeft' icon={faChevronLeft} />
     </div>
   );
 };

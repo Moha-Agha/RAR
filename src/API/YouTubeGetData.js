@@ -31,7 +31,7 @@ export function getSuggestionAPI(value) {
 export function gitSearchResultAPI(value) {
   const val = value;
   const key = 'AIzaSyBahF7YmvpZiMBziQXy21Uhe44URp2yPHE';
-  const maxResults = 10;
+  const maxResults = 9;
   const url =
     'https://www.googleapis.com/youtube/v3/search?key=' +
     key +

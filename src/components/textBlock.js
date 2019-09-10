@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 
 export default class TextBlock extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
   render() {
     return (
       <article className='container '>
@@ -23,6 +27,12 @@ export default class TextBlock extends Component {
               that is core to delivering on our promise of privacy and security
               as central aspects of your Firefox experience.
             </p>
+            <br />
+
+            <h3 className='mb-4'>list of the suggestions video</h3>
+            {this.props.searchResults.map((searchResult, i) => {
+              return <p>{searchResult.snippet.title}</p>;
+            })}
             <br />
             <p className='blogTextP'>
               Currently over 20% of Firefox users have Enhanced Tracking

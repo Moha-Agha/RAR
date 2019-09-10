@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { gitSearchResultAPI } from '../API/YouTubeGetData';
-import Slider from '../slider2/Slider';
+// import Slider from '../slider/Slider';
+import Slider from './Slider';
 import TextBlock from './textBlock';
 
 export class GitSearchResult extends Component {
@@ -39,7 +40,7 @@ export class GitSearchResult extends Component {
   render() {
     const { searchResults, loading, questionCache } = this.state;
     if (loading) {
-      return <p>loading...</p>;
+      return <p></p>;
     }
     if (questionCache !== this.props.question) {
       this.setState({
@@ -50,9 +51,8 @@ export class GitSearchResult extends Component {
 
     return (
       <React.Fragment>
-        {/* <Slider searchResults={searchResults} /> */}
         <Slider searchResults={searchResults} />
-        <TextBlock />
+        <TextBlock searchResults={searchResults} />
       </React.Fragment>
     );
   }

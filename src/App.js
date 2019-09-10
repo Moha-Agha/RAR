@@ -67,7 +67,7 @@ class App extends Component {
     const { inputSearch, question, error } = this.state;
 
     return (
-      <div className='App'>
+      <React.Fragment>
         <header className='container-fluid headerBackground'>
           <div className='container'>
             <div className='row'>
@@ -111,7 +111,7 @@ class App extends Component {
           </div>
         </header>
         {!question ? <NoVideoYet /> : <GitSearchResult question={question} />}
-      </div>
+      </React.Fragment>
     );
   }
 }

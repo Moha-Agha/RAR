@@ -12,12 +12,25 @@ export default class Slide extends Component {
     };
   }
   render() {
-    const styles = {
-      backgroundImage: `url(${this.props.image})`,
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: '50% 60%'
-    };
-    return <div className='slide' style={styles}></div>;
+    return (
+      <div className={this.props.scrolled ? 'd-none' : 'rightSlide'}>
+        <img src={this.props.video.snippet.thumbnails.high.url} alt='img' />
+      </div>
+      /* <SlideVideo
+          key={i}
+          video={video}
+          scrolled={this.state.scrolled}
+          />
+          <SlideImgLeft
+          key={i}
+          video={video}
+          scrolled={this.state.scrolled}
+          />
+          <SlideImgRight
+          key={i}
+          video={video}
+          scrolled={this.state.scrolled}
+          /> */
+    );
   }
 }
