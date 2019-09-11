@@ -110,6 +110,7 @@ class App extends Component {
             </div>
           </div>
         </header>
+
         {!question ? <NoVideoYet /> : <GitSearchResult question={question} />}
       </React.Fragment>
     );

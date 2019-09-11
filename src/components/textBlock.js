@@ -9,7 +9,7 @@ export default class TextBlock extends Component {
     return (
       <article className='container '>
         <div className='row'>
-          <div className='blogText offset-1 col-lg-10 mt-5'>
+          <div className='blogText offset-lg-1 col-lg-10 col-sm-12 mt-5'>
             <h1>Firefox Blocks Third-Party Tracking Cookies</h1>
             <div className='h1After mb-5'></div>
             <h2 className='mb-6'>

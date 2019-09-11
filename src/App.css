@@ -291,6 +291,12 @@ body {
 .backArrow:hover {
   color: #2f2f2f; }
 
+.reactjs-coverflow_Main {
+  background: none; }
+
+.coverflowImg {
+  width: 150px; }
+
 /*********slider 2***********/
 .carousel {
   width: 100vw;

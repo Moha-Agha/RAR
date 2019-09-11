@@ -40,7 +40,7 @@ export default class Slider extends Component {
     return (
       <div
         className={
-          this.state.scrolled ? 'sliderWrapperFixed' : 'sliderWrapper mt-6'
+          this.state.scrolled ? 'sliderWrapperFixed ' : 'sliderWrapper mt-6'
         }
       >
         <div
@@ -54,7 +54,7 @@ export default class Slider extends Component {
             <FontAwesomeIcon className='arrowRight' icon={faChevronRight} />
           </div>
 
-          <div className='offset-1 col-lg-10'>
+          <div className='offset-1 col-lg-10 d-none d-lg-block d-md-block'>
             {!this.state.loading ? (
               <div className={this.state.scrolled ? 'd-none' : 'rightSlide'}>
                 <img src='./images/slid2.png' alt='img' />

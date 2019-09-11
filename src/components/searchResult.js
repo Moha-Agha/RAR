@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { gitSearchResultAPI } from '../API/YouTubeGetData';
+
+// import CoverflowSlider from './CoverflowSlider';
 // import Slider from '../slider/Slider';
 import Slider from './Slider';
+
 import TextBlock from './textBlock';
 
 export class GitSearchResult extends Component {
@@ -52,6 +55,7 @@ export class GitSearchResult extends Component {
     return (
       <React.Fragment>
         <Slider searchResults={searchResults} />
+        {/* <CoverflowSlider searchResults={searchResults} /> */}
         <TextBlock searchResults={searchResults} />
       </React.Fragment>
     );
